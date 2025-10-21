@@ -12,7 +12,7 @@ jobs:
 
       # Conferir a versao instalada
       - name: Node version
-        run: Node --version
+        run: node --version
 
       - name: instalando dependencias
         run: npm install
