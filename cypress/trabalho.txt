@@ -1,0 +1,20 @@
+Trabalho Final individual.
+Usando a aplicação fictícia Automation Exercise, crie um projeto que implementa os casos descritos na página "Test Cases":
+1, 2, 3, 4, 5, 6, 8, 9, 10 e 15
+npx cypress run --spec "cypress/e2e/automation-exercise-modules.cy.js"
+Formato de Entrega do Trabalho Final @everyone
+
+O entregável deverá ser o upload do projeto com a URL para o Github, com atenção para os seguintes pontos:
+
+1 - Execução via Github Actions
+2 - Execução sem quebras
+3 - Uso adequado de seletores e padrões
+4 - Atenção a boas práticas
+5 - Relatórios
+
+Obs.: se possível, remover a node_modules antes de fazer o zip para a entrega
+
+Data e Hora de Entrega
+
+Hoje 18/10 até às 18 horas com suporte ao vivo ou até o dia 31 de Outubro às 23:59:59 sem o suporte ao vivo.
+A entrega individual deve ser feita via upload na plataforma. (Está na Aula 9)
