@@ -1,6 +1,6 @@
 name: web EE Tests
 on:
-  workflow_dispatch:
+  workflow_dispatch: {}
 
 jobs:
   web-tests:
@@ -13,18 +13,21 @@ jobs:
       - name: Use Node.js 20.x
         uses: actions/setup-node@v4
         with:
-        node-version: '20.x'
+          node-version: "20.x"
+          cache: "npm"
+          cache-dependency-path: package-lock.json
 
-      - name: instalando dependencias
-        run: npm install
+      - name: Instalando dependências
+        run: npm ci
 
-      - name: executando os testes
+      - name: Executando os testes
         run: npx cypress run
 
       - uses: actions/upload-artifact@v4
         if: ${{ !cancelled() }}
         with:
           name: relatorios
-          path: cypress/reports
-            cypress/screenshots
-            cypress/videos
+          path:
+            - cypress/reports
+            - cypress/screenshots
+            - cypress/videos
